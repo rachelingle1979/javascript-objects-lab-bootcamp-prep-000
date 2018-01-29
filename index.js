@@ -3,3 +3,8 @@ function recipe(){
   return recipe;
 }
 
+function updateObjectWithKeyAndValue(list, ingredient, amount){
+  var recipe = Object.assign({}, list, {[ingredient] : amount});
+  return recipe;
+}
+
